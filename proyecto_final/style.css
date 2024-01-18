@@ -1,0 +1,281 @@
+/**El contenido de los equipos, es decir, del contenido de la página está comentado en el css de ferrari (style_ferrari) pues todos los demás son iguales a diferencia del color de la tipografía de los títulos, subtítulos y enlaces**/
+
+*{
+    /**Para que los estilos del navegador se borren**/
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth; /**Para que el scroll sea suave**/
+}
+
+body{/**Todo el body tiene la fuente Bebas Neue**/
+    font-family: 'Bebas Neue', sans-serif;
+    }
+h1,h2{/**Definimos los colores y el tamaño de tipografía de los títulos y subtítulos. También se alinea el texto al centro**/
+    color: #780000;
+    font-size: 10em;
+    text-align: center;
+}
+p{ /**Tamaño de los párrafos de toda la página**/
+    font-size: 20px;
+}
+section div a{ /**Estilo de los enlaces de las secciones**/
+    font-family: 'Bebas Neue', sans-serif;
+    color: #780000;
+    font-size: large; /**Tamaño de tipografía grande**/
+    border-radius: 16px; /**Borde redondeado**/
+    padding: 8px 16px; /**Padding de 8px arriba y abajo y 16px a los lados**/
+}
+section div a:hover{
+    color: #f2f2f2; /**Cuando el ratón pase por encima del enlace, el color de la tipografía cambia a blanco**/
+}
+nav{
+    width: 100vw; /**El ancho de la barra de navegación es del ancho del navegador**/
+    margin-right: 30px; /**Margen de 30px a la derecha en la caja del nav**/
+    height: 80px; /**Altura de la nav en pixeles**/
+    background-color: transparent; /**Color de fondo transparente**/
+    color: #5d5b5b; 
+    text-align: center;
+    font-size: 20px;
+    display: flex; /**Para que los elementos del nav se distribuyan en una fila**/
+    flex-wrap: wrap; /**Para que los elementos del nav creen una nueva fila si la necesitaran en caso de que no haya espacio suficiente**/
+    justify-content: space-around; /**Para que los elementos del nav se distribuyan por el espacio que tienen. Es decir, se reparten el espacio de forma equitativa**/
+    align-items: center; /**Para que los elementos del nav se alineen en el centro**/
+    position: fixed; /**Para que el nav se quede fijo en la parte superior de la página**/
+    z-index: 100; /**Para que el nav esté por encima de todo**/
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end; /**Los elementos de la lista, es decir, Home, Ferrari, Red Bull y Mercedes se vayan al final de su contenedor**/
+    list-style: none; /**Para que no aparezcan los puntos de la lista**/
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /**Para que el fondo del nav sea negro con opacidad 0.5**/
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+nav a{
+    text-decoration: none; /**Quitar los añadidos que coloca html por defecto a los enlaces (el color azul, subrayado)**/
+    padding-right: 35px;
+    color: #fff;
+    font-weight: 100; /**Peso de la tipografía, es decir, el grosor**/
+    text-transform: uppercase; /**Transforma el texto a mayúsculas entero**/
+}
+nav a:hover{
+    color: #ffffff;
+    transition: all 0.5s ease-in-out; /**Transicion ir y volver que se aplica a todos y dura medio segundo cuando pones el ratón encima**/
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff; /**Set te sombras blancas con difuminado incrementado para que parezca un efecto glow**/
+}
+
+a{
+    list-style: none; /**Quitar lista de estilos**/
+    text-decoration: none; /**Quitar adornos de los enlaces**/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;/**Cambiar de fuente solo a los enlaces**/
+}
+.logo{
+    height: 80px;   /**Altura del logo**/ 
+}
+
+section{ /**Afecta a todas las secciones**/
+    width: 100%; /**Ocupa el ancho de la página**/
+    height: calc(100vh - 80px); /**Ocupa el alto del navegador -80px de la altura del logo**/
+    background-color: #fff; /**Color de fondo blanco predeterminado**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /**Poner los elementos en columna alineados en el eje x e y en el centro**/
+}
+section .contenido { /**El contenido ocupa el 90% del ancho, 80% del alto**/
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end; /**Los elementos comienzan a surgir desde el final**/
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px; /**10px de redondeado al contenido de la seccion**/
+}
+.inicio{
+    background-image: url(img/fotoinicio.jpg); /**Seleccionar la imagen de fondo**/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.ferrari{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/proyecto_final/img/ferrariinicio.jpg); /**Seleccionar la imagen de fondo y ponerle un gradiente negro con transparencia 0,5**/
+    background-size: cover; /**La imagen ocupa toda la caja**/
+    background-position: center; /**La imagen está centrada en la caja**/
+    width: 100%;
+    background-repeat: no-repeat; /**La imagen no se repite cuando acaba**/
+    height: 100vh;
+}
+.ferrari a{
+    font-size: 1em; /**los enlaces dentro de la sección de ferrari tienen el tamaño de 1em**/
+}
+.ferrari p{
+    color: #fff;
+    font-size: 20px; 
+    text-align: center;
+}
+.redbull{ /**Mismos estilos que .ferrari pero con otra imagen**/
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/proyecto_final/img/inicioredbull.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #00174C;
+}
+.redbull a{ /**Cambiar el color y el tamaño tipográfico a los enlaces. Se aplica a mercedes también con su propio color**/
+    font-size: 1em;
+    color: #00174C;
+}
+.redbull h2{ /**Cambiar el color del título de la sección del equipo Red Bull. Se aplica a Mercedes también**/
+    color: #00174C;
+}
+.redbull button{ /**Cambiar el color de todos los botones de la sección de Red Bull**/
+    background-color: #00174C;
+}
+.mercedes{/**Mismos estilos que .ferrari pero con otra imagen**/
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/proyecto_final/img/iniciomercerdes.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.mercedes a{ 
+    font-size: 1em;
+    color: #00A19C;
+}
+.mercedes h2{
+    color: #00A19C;
+}
+.mercedes button{
+    background-color: #00A19C;
+}
+.mercedes p{
+    color: #00A19C;
+    font-size: 20px;
+    text-align: center;
+}
+.contenido {
+    position: relative; /**Para que el contenido de la sección se quede fijo**/
+}
+.botones{
+    justify-content: space-around; /**Para que los botones se distribuyan por el espacio que tienen**/
+}
+button{ /**Estilos de todos los botones**/
+    width: 200px;
+    height: 50px;
+    background-color: #780000; /**Color de fondo rojo**/
+    border: none; /**Quitar borde que viene por defecto**/
+    border-radius: 16px; /**Redondear borde**/
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer; /**Cambiar el cursor a 'clickable' cuando pases por encima del botón**/
+    margin-top: 20px; /**Márgenes para que tengan un espacio con los elementos de arriba y de los lados**/
+    margin-left: 20px;
+    margin-right: 20px;
+}
+button:hover{
+    color: #780000;
+    transition: color 0.3s ease-in-out; /**Transición para que cuando hagas hover sobre los botones el color cambie de forma suave**/
+}
+.botones :first-child{
+    background-color: transparent; /**El primer botón no tiene color de fondo**/
+}
+img.logo{ 
+    padding: 10px; /**Padding de 10px a la imagen**/
+    margin-top: 10px; 
+}
+.livery a,img{ /**Estilos de las imágenes de los coches**/
+    height: 500px; 
+    width: auto; /**Ancho automático**/
+    border-radius: 16px;
+    max-width: 100%; /**Con esta regla y max-height conseguimos que la imagen sea responsive y se deforme con el tamaño de la caja**/
+    max-height: 100%;
+    background-color: #f2f2f26b;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 36px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px; /**Sombra de la imagen con opacidad del 10% y otra con 2% de opacidad. La primera crea una sombra difusa hacia abajo y la segunda se expande 1px desde el borde de la imagen sin difusión**/
+    
+}
+footer{ /**Estilos del footer. Primero alineamos horizontalmente los elementos y se distribuyen de forma equitativa por el ancho y alto**/
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div :first-child{ 
+    font-size: large; /**Tamaño de tipografía grande**/
+}
+footer div p a{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #780000;
+    font-size: x-large; /**Tamaño de tipografía extra grande**/
+    border-radius: 16px;
+    border: 1px solid #780000;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /**Transición 'background-color' con efecto de disolver a 0.3 segundos**/
+
+}
+footer div p a:hover{ /**Cuando el ratón pase por encima del enlace dentro de los párrafos del div del footer, el color de la tipografía cambia a blanco y el fondo a rojo**/
+    background-color: #780000;
+    color: #fff;
+
+}
+footer div:last-child{ /**El último div del footer tiene un tamaño de tipografía extra grande**/
+    font-size: x-large;
+}
+footer div i{ /**Estilos de los iconos de las redes sociales**/
+    font-size: large;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+footer div i:hover{
+    color: #780000;
+    transition: background-color 0.1s ease, color 0.3s ease;  /**Transición 'background-color' con efecto de disolver a 0.1 segundos dos veces**/
+}
+
+/** RESPONSIVE **/
+
+@media screen and (max-width:960px){ /**Cuando el ancho de la pantalla sea menor o igual a 960px**/
+    section .contenido { /**El contenido ocupa el 90% del ancho y 80% del alto. Los elementos se ponen en columna centrados y se crean nuevas columnas si fueran necesarias por el wrap**/
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:737px){ /**Cuando el ancho de la pantalla sea menor o igual a 737px**/
+    .ferrari div{ /**Los elementos de la sección de Ferrari se ponen en columna y centrados**/
+        display: flex;
+        align-items: center;
+    }
+    button{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width:552px){  /**Cuando el ancho de la pantalla sea menor o igual a 552px**/
+    nav ul li a{ /**Los enlaces de la nav toman el tamaño de letra de 0.8em**/
+        font-size: 0.8em;
+    }
+    h1,h2{ /**Los títulos y subtítulos toman el tamaño de letra de 3em y 1em respectivamente**/
+        font-size: 3em;
+    }
+    p{
+        font-size: 1em; /**Los párrafos toman el tamaño de letra de 1em**/
+    }
+    button{
+        font-size: 1.5em; /**Los botones toman el tamaño de letra de 1.5em**/
+    }
+}

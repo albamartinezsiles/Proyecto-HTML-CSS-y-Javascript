@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    }
+h1{
+    color: #00A19C;
+    font-size: 10em;
+    z-index: 2;
+}
+p{
+    text-transform: none;
+}
+section div a{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #00A19C;
+    font-size: large;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+section div a:hover{
+    color: #f2f2f2;
+}
+nav{
+    width: 100vw;
+    margin-right: 30px;
+    height: 80px;
+    background-color: transparent;
+    color: #5d5b5b;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+   
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+nav a{
+    text-decoration: none;
+    padding-right: 35px;
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+
+nav a:hover{
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo{
+    height: 80px;    
+}
+section{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .contenido{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    
+}
+.ferrari{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/proyecto_final/img/mercedes.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.ferrari p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+}
+.contenido {
+    position: relative;
+}
+
+.botones{
+    justify-content: space-around;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: #00A19C;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.botones :first-child{
+    background-color: transparent;
+}
+.pilotos{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/merc.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    align-content: flex-start;
+    overflow:auto;
+}
+.pilotos h2{
+    color:#00A19C;
+    font-size: 10em;
+    width: 90%;
+}
+.pilotos div{
+    margin-top: 20px;
+    padding: 0px 20px 20px 20px;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.pilotos div :nth-child(2){
+    font-size: 40px;
+    color: #00A19C;
+}
+.pilotos div :nth-child(1){
+    font-size: 20px;
+}
+.pilotos div:last-child{
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 25%), url(/proyecto_final/img/3.png);
+    background-size: cover;
+}
+.pilotos div:nth-child(2){
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 25%), url(/proyecto_final/img/2.png);
+    background-size: cover;
+}
+
+.noticias{
+    height: 100vh;
+    width: 100%;
+    background-color: #2f2f2f2f;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url(img/noticias.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+.noticias h2{
+    color:#00A19C;
+    font-size: 10em;
+    width: 90%;
+}
+.noticias h3{
+    color: #00A19C;
+    height: fit-content;
+}
+.noticias div{
+    height: 25%;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 0 8px 16px 0px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.noticias :nth-child(3){
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 50%), url(/proyecto_final/img/3noticia.jpg);
+    background-size:cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.noticias :nth-child(4){
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 50%), url(/proyecto_final/img/4noticia.jpg);
+    background-size:cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.noticias > div:nth-child(2){
+    flex-basis: 60%;
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 50%), url(/proyecto_final/img/2noticia.jpg);
+    background-size:cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.noticias :nth-child(5){
+    flex-basis: 60%;
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 50%), url(/proyecto_final/img/1noticia.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.noticias div:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out; 
+}
+.livery {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url(img/cochedelmes.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.livery h2{
+    color:#00A19C;
+    font-size: 10em;
+    width: 90%;
+}
+.livery p{
+    margin-top: 20px;
+    mix-blend-mode: difference;
+    color: white;
+}
+img.logo{
+    padding: 10px;
+    margin-top: 10px;
+}
+.livery a,img{
+    height: 500px;
+    width: auto;
+    border-radius: 16px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #f2f2f26b;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 36px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+    
+}
+.caja_livery{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.caja_livery button{
+    width: 50px;
+    height: 50px;
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto glow */
+}
+
+.caja_livery button:hover{
+    box-shadow: 0 0 10px #ffffff,0 0 20px #ffffff,0 0 30px #ffffff,0 0 40px #ffffff;
+}
+.caja_livery img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div :first-child{
+    font-size: large;
+}
+footer div p a{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #00A19C;
+    font-size: x-large;
+    border-radius: 16px;
+    border: 1px solid #00A19C;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+
+}
+footer div p a:hover{
+    background-color: #00A19C;
+    color: #fff;
+
+}
+footer div:last-child{
+    font-size: x-large;
+}
+footer div i{
+    font-size: large;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+footer div i:hover{
+    color: #00A19C;
+    transition: background-color 0.1s ease, color 0.3s ease; 
+}
+
+
+/** RESPONSIVE **/
+
+@media screen and (max-width:960px){
+    section .contenido {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:918px){
+    .livery a {
+    width: 650px;
+    height: 450px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .noticias {
+        height: auto;
+        width: 100%;
+        background-color: #2f2f2f2f;
+        display: flex;
+        align-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        background-image: url(img/noticias.JPG);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width:737px){
+    button{
+        margin-bottom: 20px;
+    }
+    .livery a {
+        width: calc(650px / 1.5);
+        height: calc(450px / 1.5);
+        }
+}
+
+@media screen and (max-width:737px){
+    .livery h2 {
+        color: #00A19C;
+        font-size: 5em;
+        width: 90%;
+    }
+    .livery {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-image: url(img/cochedelmes.png);
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .noticias h2 {
+        color: #00A19C;
+        font-size: 5em;
+        width: 90%;
+    }
+    .pilotos h2 {
+        color: #00A19C;
+        font-size: 5em;
+        width: 90%;
+    }
+    .pilotos {
+        width: 100%;
+        height: 100vh;
+        background-image: url(img/equipoferrari2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-top: 20px;
+        align-content: flex-start;
+        overflow: auto;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }
+    .ferrari div{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:611px){
+        .livery a {
+        width: calc(550px / 1.5);
+        height: calc(350px / 1.5);
+        }
+}
+
+@media screen and (max-width:541px){ 
+    .livery a {
+        width: calc(550px / 2);
+        height: calc(350px / 2);
+        }
+}
+
+@media screen and (max-width:552px){  /**Cuando el ancho de la pantalla sea menor o igual a 552px**/
+    nav ul li a{ /**Cambio de tamaño de la tipografía de la barra de navegación**/
+        font-size: 0.8em;
+    }
+    h2{ /**Cambio de tamaño de la tipografía de los subtítulos**/
+        font-size: 3em;
+    }
+    p{ /**Cambio de tamaño de la tipografía de los párrafos**/
+        font-size: 1em;
+    }
+    button{ /**Cambio de tamaño de la tipografía de los botones**/
+        font-size: 1.5em;
+    }
+}    
+

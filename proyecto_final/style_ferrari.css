@@ -1,0 +1,486 @@
+
+/**ESTILOS COMUNES A STYLE.CSS**/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    }
+h1{
+    color: #780000;
+    font-size: 10em;
+    z-index: 2;
+}
+p{
+    text-transform: none;
+}
+section div a{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #780000;
+    font-size: large;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+section div a:hover{
+    color: #f2f2f2;
+}
+nav{
+    width: 100vw;
+    margin-right: 30px;
+    height: 80px;
+    background-color: transparent;
+    color: #5d5b5b;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+   
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+nav a{
+    text-decoration: none;
+    padding-right: 35px;
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+
+nav a:hover{
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo{
+    height: 80px;    
+}
+section{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .contenido{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.ferrari{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/proyecto_final/img/a95aa9e0-5fec-4263-96fb-7c628b0e7742.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.ferrari p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+}
+.contenido {
+    position: relative;
+}
+
+.botones{
+    justify-content: space-around;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: #780000;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.botones :first-child{
+    background-color: transparent;
+}
+
+/**ESTILOS DIFERENTES A INICIO**/
+
+.pilotos{
+    width: 100%;
+    height: 100vh; 
+    background-image: url(img/equipoferrari2.jpg); /**Cambiar la foto de fondo de la sección pilotos**/
+    background-attachment: fixed; /**Para que la imagen de fondo no se mueva al hacer scroll**/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around; /**Para que los elementos se distribuyan de forma equitativa en el espacio disponible**/
+    align-items: center; 
+    flex-direction: row; /**Para que los elementos se distribuyan en una fila**/
+    flex-wrap: wrap; /**Para que los elementos se distribuyan en varias filas SI FUESE NECESARIO**/
+    padding-top: 20px; /**Para que los elementos no se peguen al borde superior**/
+    align-content: flex-start; /**Para que los elementos se distribuyan desde el borde superior**/
+    overflow:auto; /**Para que los elementos no se salgan de la sección**/
+}
+.pilotos h2{
+    color:#780000;
+    font-size: 10em; /**Aumentar tamaño de la letra**/
+    width: 90%; /**Ancho del subtítulo al 90% del ancho de su caja contenedora, es decir, la sección de pilotos**/
+}
+.pilotos div{ /**Estilos de los elementos que contienen la información de cada piloto**/
+    margin-top: 20px;
+    padding: 0px 20px 20px 20px; /**Añadir padding para que los elementos no se peguen al borde inferior**/
+    width: 40%; 
+    height: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; /**Sombra con un opacidad del 16% con desplazamiento a la derecha y abajo de 16px y un desenfoque de 36px. La segunda sombra solo tiene 1px de propagación en un 6% de opacidad.**/
+}
+.pilotos div :nth-child(2){ /**Estilos del elemento que contiene la foto de cada piloto**/
+    font-size: 40px;
+    color: #780000;
+}
+.pilotos div :nth-child(1){ /**Estilos del elemento que contiene el nombre de cada piloto**/
+    font-size: 20px;
+}
+.pilotos div:last-child{ /**Segunda foto de los pilotos**/
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 25%), url(/proyecto_final/img/sainz.png); /**Degradado de color blanco a transparente hasta el 25% para hacer legible el texto. Se añade también la foto del piloto para que el degradado actue sobre la foto, no sobre la caja.**/
+    background-size: cover;
+}
+.pilotos div:nth-child(2){ /**Primera foto de los pilotos**/
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 25%), url(/proyecto_final/img/leclerc.jpg);
+    background-size: cover;
+}
+
+.noticias{ /**Estilos de la sección noticias. Mismas características que la sección anterior de pilotos**/
+    height: 100vh;
+    width: 100%;
+    background-color: #2f2f2f2f;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly; /**Para distribuir el mismo espacio negativo y positivo entre los elementos**/
+    background-image: url(img/noticias.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+.noticias h2{ /**Estilos del subtítulo. Ancho del 90% de su caja contenedor y tamaño de texto de 10em. Color de letra rojo ferrari**/
+    color:#780000;
+    font-size: 10em;
+    width: 90%;
+}
+.noticias h3{ /**Estilo de los enunciados de las noticias. Alto para rellenar el contenido**/
+    color: #780000;
+    height: fit-content;
+}
+.noticias div{ /**Estilos de los elementos que contienen la información de cada noticia**/ 
+    height: 25%; /**Altura del 25% del alto de la sección**/
+    display: flex;
+    align-content: flex-start; /**Para que los elementos se distribuyan desde el borde superior**/
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 0 8px 16px 0px; /**Bordes redondeados de 8px en el superior derecho y en el inferior derecho de 16px**/
+    padding: 20px;
+    margin: 20px;
+}
+
+/**Estilos del elemento que contiene la foto de cada noticia. Poseen un degradado de blanco a transparente hasta el 50% y la imagen. La imagen ocupa el 100% de la caja contenedora y una sombra igual que la anteriormente explicada, es decir, 36px de difuminado y 10px de movimiento de derecha y abajo. Otra sombra con 1px de propagación**/
+
+.noticias :nth-child(3){ 
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 50%), url(/proyecto_final/img/3noticia.jpg);
+    background-size:cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.noticias :nth-child(4){
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 50%), url(/proyecto_final/img/4noticia.jpg);
+    background-size:cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.noticias > div:nth-child(2){
+    flex-basis: 60%;
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 50%), url(/proyecto_final/img/2noticia.jpg);
+    background-size:cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.noticias :nth-child(5){
+    flex-basis: 60%;
+    background: linear-gradient(to top, rgb(253, 253, 253) 0%, rgba(0,0,0,0) 50%), url(/proyecto_final/img/1noticia.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.noticias div:hover{ /**Efecto de escala 1.05 al pasar el ratón por encima con transición**/
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out; 
+}
+.livery { /**Estilos de la sección livery. Mismas características que la sección anterior**/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url(img/cochedelmes.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.livery h2{
+    color:#780000;
+    font-size: 10em;
+    width: 90%;
+}
+.livery p{
+    margin-top: 20px;
+    mix-blend-mode: difference;
+    color: white;
+}
+img.logo{ /**estilos de la imagen del logo, es decir, del logo en sí**/
+    padding: 10px; /**Añadir padding para que el logo tenga un ancho y alto de 10px extra**/
+    margin-top: 10px; /**Añadir margen para que el logo no se pegue al borde superior**/
+}
+.livery a,img{ /**Estilos de los enlaces y la imagen**/
+    height: 500px;
+    width: auto;
+    border-radius: 16px;
+    max-width: 100%; /**Con esta regla y max-height conseguimos que la imagen sea responsive y se deforme con el tamaño de la caja**/
+    max-height: 100%;
+    background-color: #f2f2f26b;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 36px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+}
+.caja_livery{ /**Estilos de la caja que contiene los botones**/
+    display: flex; 
+    flex-direction: row; /**Para que los botones se distribuyan en una fila**/
+    align-content: space-around; /**Para que los botones se distribuyan horizontalmente**/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.caja_livery button{ /**Estilos de los botones de la sección de livery**/
+    width: 50px; /**Ancho de 50px**/
+    height: 50px; /**Alto de 50px**/
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto glow */
+}
+
+.caja_livery button:hover{ /**Efecto glow al pasar el ratón por encima aplicando 4 sombras cada una con una dispersión superior**/
+    box-shadow: 0 0 10px #ffffff,0 0 20px #ffffff,0 0 30px #ffffff,0 0 40px #ffffff;
+}
+.caja_livery img {
+    transition: opacity 0.5s ease-in-out; /* Transición suave de la opacidad */
+}
+
+ /**ESTILOS DEL FOOTER**/
+
+ footer{ /**Estilos del footer. Primero alineamos horizontalmente los elementos y se distribuyen de forma equitativa por el ancho y alto**/
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div :first-child{ 
+    font-size: large; /**Tamaño de tipografía grande**/
+}
+footer div p a{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #780000;
+    font-size: x-large; /**Tamaño de tipografía extra grande**/
+    border-radius: 16px;
+    border: 1px solid #780000;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /**Transición 'background-color' con efecto de disolver a 0.3 segundos**/
+
+}
+footer div p a:hover{ /**Cuando el ratón pase por encima del enlace dentro de los párrafos del div del footer, el color de la tipografía cambia a blanco y el fondo a rojo**/
+    background-color: #780000;
+    color: #fff;
+
+}
+footer div:last-child{ /**El último div del footer tiene un tamaño de tipografía extra grande**/
+    font-size: x-large;
+}
+footer div i{ /**Estilos de los iconos de las redes sociales**/
+    font-size: large;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+footer div i:hover{
+    color: #780000;
+    transition: background-color 0.1s ease, color 0.3s ease;  /**Transición 'background-color' con efecto de disolver a 0.1 segundos dos veces**/
+}
+
+/** RESPONSIVE **/
+
+@media screen and (max-width:1200px){ /**Cuando el ancho de la pantalla sea menor o igual a 1200px**/
+    .noticias { /**Estilos de la sección noticias, la cual necesita modificarse para encajar las noticias de forma coherente**/
+        height: auto; /**Altura automática de la sección**/
+        width: 100%; /**Ancho del 100%**/
+        background-color: #2f2f2f2f; /**Color de fondo por defecto (se aplica la imagen)**/
+        display: flex;
+        align-content: flex-start;
+        align-items: center;
+        flex-direction: row; /**Para que los elementos se distribuyan en una fila y en el centro de los ejes xy. Las demás reglas son las mismas que las de la sección sin responsive aplicado**/
+        background-image: url(img/noticias.JPG); 
+        background-attachment: fixed; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:960px){ /**Cuando el ancho de la pantalla sea menor o igual a 960px**/
+    section .contenido { /**El contenido de la primera sección cambia a columna para que tenga mayor estética junto al fondo en una pantalla vertical**/
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:918px){ /**Cuando el ancho de la pantalla sea menor o igual a 918px**/
+    .livery a { /**Cambio de ancho y alto de la imagen de la galería**/
+    width: 650px;
+    height: 450px;
+    }
+}
+
+@media screen and (max-width:737px){ /**Cuando el ancho de la pantalla sea menor o igual a 737px**/
+    button{
+        margin-bottom: 20px; /**Añadir margen inferior a todos los botones para que no se peguen al borde inferior**/
+    }
+    .livery a { /**Cambio de ancho y alto de la imagen de la galería entre 1.5**/
+        width: calc(650px / 1.5);
+        height: calc(450px / 1.5);
+        }
+    .livery h2 { /**Cambio del tamaño de la tipografía**/
+        color: #780000;
+        font-size: 5em;
+        width: 90%;
+    }
+    .livery { /**Cambios para la sección de livery. Ajusta el flex para que las flechas mantengan la posición en línea con la imagen**/
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-image: url(img/cochedelmes.png);
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .noticias h2 {
+        color: #780000;
+        font-size: 5em;
+        width: 90%;
+    }
+    .pilotos h2 {
+        color: #780000;
+        font-size: 5em;
+        width: 90%;
+    }
+    .pilotos { /**Pone el flex en columna para que quepan las cajas de los pilotos en una pantalla vertical**/
+        width: 100%;
+        height: 100vh;
+        background-image: url(img/equipoferrari2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-top: 20px;
+        align-content: flex-start;
+        overflow: auto;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }
+    .ferrari div{ /**Pone en el centro la primera sección**/
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:611px){ /**Cuando el ancho de la pantalla sea menor o igual a 611px**/
+        .livery a { /**Cambio de ancho y alto de la imagen de la galería a más pequeña**/
+        width: calc(550px / 1.5);
+        height: calc(350px / 1.5);
+        }
+}
+
+@media screen and (max-width:541px){  /**Cuando el ancho de la pantalla sea menor o igual a 541px**/
+    .livery a { /**Cambio de ancho y alto de la imagen de la galería a más pequeña aún**/
+        width: calc(550px / 2);
+        height: calc(350px / 2);
+        }
+}
+@media screen and (max-width:552px){  /**Cuando el ancho de la pantalla sea menor o igual a 552px**/
+    nav ul li a{ /**Cambio de tamaño de la tipografía de la barra de navegación**/
+        font-size: 0.8em;
+    }
+    h2{ /**Cambio de tamaño de la tipografía de los subtítulos**/
+        font-size: 3em;
+    }
+    p{ /**Cambio de tamaño de la tipografía de los párrafos**/
+        font-size: 1em;
+    }
+    button{ /**Cambio de tamaño de la tipografía de los botones**/
+        font-size: 1.5em;
+    }
+}
